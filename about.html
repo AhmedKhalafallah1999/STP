@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- put here the link of font awseome for last version and the import in style.css from google font and the style font in *-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-sub-about">
+        <div class="header">
+            <div class="logo">
+                <img class="logo" src="images/stp.jpg" />
+            </div>
+
+            <div class="navigation" id="myLinks">
+
+                <i class="fa-solid fa-xmark" onclick="myFunction()"></i>
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="courses.html">course</a>
+                <a href="blog.html">blog</a>
+                <a href="contact.html">contact</a>
+            </div>
+            <i class="fa-solid fa-bars" onclick="myFunction()"></i>
+        </div>
+        <div class="landing">
+            <div class="info">
+                <h1>About Us</h1>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Section 1 -->
+
+    <section class="about-new">
+        <div class="info">
+            <h1>About Us</h1>
+            <p>
+                STP was founded in 2006 at Cairo university; The purpose of STP is to strengthen the leadership, skills,
+                effectiveness and efficiency of involved people; enabling them to further enrich the quality of the
+                community and their personal life.
+            </p>
+            <br>
+            <div class="data">
+                <div class="OBJECTIVE">
+                    <div class="words">
+                        <h3>OBJECTIVE</h3>
+                        <p>
+                            Reducing the gap between work sector & academic studies.
+                            Promoting the idea of development among youth.
+                            Contributing in the development & the awakening of the community.
+                            Convencing & supporting a dynamic learning community</p>
+                    </div>
+                </div>
+                <div class="OBJECTIVE">
+                    <div class="words">
+                        <h3>VISION</h3>
+                        <p>
+                            To be a Leading organization working on developing youth who will lead positive changes.
+                        </p>
+                    </div>
+                </div>
+                <div class="OBJECTIVE">
+                    <div class="words">
+                        <h3>MISSION</h3>
+                        <p>
+                            To develop youth in various fields personally and technically through academic programs,
+                            projects, and events in a values oriented system, to take our part in providing a
+                            generation
+                            capable of playing its roles effictively towards itself, community and country.</p>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#">EXPLORER NOW</a>
+        </div>
+        <div class="image">
+            <img src="images/about.jpg">
+        </div>
+    </section>
+    <!-- End section 1 -->
+
+
+    <div class="container">
+        <div>
+            <button id="btnRed">Red</button>
+            <button id="btnBlue">Blue</button>
+            <button id="btnGreen">Green</button>
+        </div>
+        <script src="script.js"></script>
+
+
+        <!-- start section 5 also  About -->
+        <section class="about">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, quam? Aut, aliquid! Quo tempore
+                explicabo
+                eius iusto possimus minus,<br> unde quam illum aut quis voluptatum quos amet iure consequuntur quisquam!
+            </p>
+            <div class="icons-social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <p class="two">Made with <span><i class="fa-solid fa-heart"></span></i>by Ahmed Khalafallah</p>
+        </section>
+        <!-- end section 5 also  About -->
+
+
+
+
+
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+
+            }
+            document.getElementById("changeRed").onclick = function () {
+                document.getElementById("output").style.color = 'red';
+            }
+
+
+
+        </script>
+</body>
+
+</html>
